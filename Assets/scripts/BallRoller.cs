@@ -24,9 +24,9 @@ public class BallRoller : MonoBehaviour
 
         // Change r but keep it between -8 and 8
         r += 0.0001f * speed * direction;
-        if (Mathf.Abs(r) > 8f)
+        if ((r > 8f) || (r < 2.5f))
         {
-            r = 8f * direction;
+            r = 2.75f * direction + 5.25f;
             direction *= -1;
         }
 
