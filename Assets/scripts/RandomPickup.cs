@@ -23,7 +23,7 @@ public class RandomPickUp : MonoBehaviour
             posX = signX * 7.5 * rnd.NextDouble();
             posZ = signZ * 7.5 * rnd.NextDouble();
 
-            transform.position = new Vector3((float)posX, transform.position.y, (float)posZ);
+            transform.position = new Vector3((float)posX, 0.5f, (float)posZ);
 
             yield return new WaitForSeconds(3);
         }
