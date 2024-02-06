@@ -10,6 +10,7 @@ public class PickupTrigger : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject instructionsObject;
+    public GameObject countTextObject;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class PickupTrigger : MonoBehaviour
         SetCountText();
         winTextObject.SetActive(false);
         instructionsObject.SetActive(true);
+        countTextObject.SetActive(true);
     }
 
     void SetCountText()
@@ -31,6 +33,7 @@ public class PickupTrigger : MonoBehaviour
         if (count >= 12)
         {
             winTextObject.SetActive(true);
+            countTextObject.SetActive(false);
         }
     }
 
