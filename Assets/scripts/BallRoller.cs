@@ -43,7 +43,7 @@ public class BallRoller : MonoBehaviour
         transform.position = new Vector3(x, 0.5f, z);
     }
 
-    private void OnColliderEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
