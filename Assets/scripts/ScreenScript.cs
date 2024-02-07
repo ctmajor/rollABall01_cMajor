@@ -19,6 +19,7 @@ public class ScreenScript : MonoBehaviour
 
     public void gameOver()
     {
+        Debug.Log("game over");
         gameOverScreen.SetActive(true);
         pickup.SetActive(false);
         winTextObject.SetActive(false);

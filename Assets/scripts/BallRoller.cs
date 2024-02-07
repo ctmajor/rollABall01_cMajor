@@ -5,7 +5,7 @@ using System;
 
 public class BallRoller : MonoBehaviour
 {
-    public ScreenScript logic;
+    private ScreenScript logic;
 
     public float speed;
     private float r = 8f;
@@ -45,8 +45,10 @@ public class BallRoller : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        Debug.Log("entered 1" + other + ", " + other.gameObject.tag);
+        if (other.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("entered 2");
             logic.gameOver();
         }
     }
