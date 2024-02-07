@@ -274,7 +274,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 80300438}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106228160}
+        m_TargetAssemblyTypeName: ScreenScript, Assembly-CSharp
+        m_MethodName: restartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &80300438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,6 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a383c3e160db4c14fa40a52ef113356a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
   speed: 36
 --- !u!4 &142644593 stripped
 Transform:
@@ -1042,7 +1055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &207129316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3019,6 +3032,52 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2137535616}
   m_SourcePrefab: {fileID: 100100000, guid: b099762fbd5eaeb43a19d36ca105eb2c, type: 3}
+--- !u!1 &1106228159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106228161}
+  - component: {fileID: 1106228160}
+  m_Layer: 0
+  m_Name: ScreenManager
+  m_TagString: Logic
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1106228160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106228159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd97dbf4edd0b7419ca583992e77467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 207129315}
+  pickup: {fileID: 6387453444678799027, guid: b099762fbd5eaeb43a19d36ca105eb2c, type: 3}
+--- !u!4 &1106228161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106228159}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125847671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6387453444678799027, guid: b099762fbd5eaeb43a19d36ca105eb2c,
@@ -4747,6 +4806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
@@ -5978,3 +6041,4 @@ SceneRoots:
   - {fileID: 1409280463}
   - {fileID: 1447086055}
   - {fileID: 884509019}
+  - {fileID: 1106228161}

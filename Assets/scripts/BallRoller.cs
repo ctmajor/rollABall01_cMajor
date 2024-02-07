@@ -5,12 +5,19 @@ using System;
 
 public class BallRoller : MonoBehaviour
 {
+    public ScreenScript logic;
+
     public float speed;
     private float r = 8f;
     private float x;
     private float z;
     private float theta = 0f;
     private int direction = 1;
+
+    void Start()
+    {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<ScreenScript>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -34,5 +41,13 @@ public class BallRoller : MonoBehaviour
         z = r * Mathf.Sin(theta);
 
         transform.position = new Vector3(x, 0.5f, z);
+    }
+
+    private void OnColliderEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            logic.gameOver();
+        }
     }
 }
