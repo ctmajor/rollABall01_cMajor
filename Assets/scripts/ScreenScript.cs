@@ -9,6 +9,9 @@ public class ScreenScript : MonoBehaviour
 {
     public GameObject gameOverScreen;
     public GameObject pickup;
+    public GameObject winTextObject;
+    public GameObject instructionsObject;
+    public GameObject countTextObject;
 
     public void restartGame()
     {
@@ -19,5 +22,8 @@ public class ScreenScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         pickup.SetActive(false);
+        winTextObject.SetActive(false);
+        instructionsObject.SetActive(false);
+        countTextObject.SetActive(false);
     }
 }
