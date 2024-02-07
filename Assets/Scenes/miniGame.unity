@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028425, g: 0.22571525, b: 0.30692267, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028468, g: 0.22571579, b: 0.30692378, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3063,6 +3063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 207129315}
   pickup: {fileID: 6387453444678799027, guid: b099762fbd5eaeb43a19d36ca105eb2c, type: 3}
+  winTextObject: {fileID: 384335449}
+  instructionsObject: {fileID: 656320526}
 --- !u!4 &1106228161
 Transform:
   m_ObjectHideFlags: 0
