@@ -1552,17 +1552,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Get all the cubes into the basket!
+  m_text: 'Get the cubes in the basket to get to 12 points!
 
     Yellow: 1 point
 
-    Red: 2 points
+    Red:
+    2 points
 
-    Hold
-    the trigger to pick up a cube, and release to drop it.
+    Hold the trigger to pick up a cube, and release to drop it.
 
-    Use the thumb pad
-    to teleport all over the playing area.'
+    Use
+    the thumb pad to teleport all over the playing area.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
