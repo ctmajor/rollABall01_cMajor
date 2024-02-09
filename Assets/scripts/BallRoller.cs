@@ -5,8 +5,6 @@ using System;
 
 public class BallRoller : MonoBehaviour
 {
-    private ScreenScript logic;
-
     public float speed;
     private float r = 8f;
     private float x;
@@ -16,7 +14,7 @@ public class BallRoller : MonoBehaviour
 
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<ScreenScript>();
+
     }
 
     // Update is called once per frame
@@ -43,13 +41,4 @@ public class BallRoller : MonoBehaviour
         transform.position = new Vector3(x, 0.5f, z);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("entered 1" + other + ", " + other.gameObject.tag);
-        if (other.gameObject.tag.Equals("Player"))
-        {
-            Debug.Log("entered 2");
-            logic.gameOver();
-        }
-    }
 }

@@ -9,6 +9,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - Ball
+  - PickupRed
   layers:
   - Default
   - TransparentFX
